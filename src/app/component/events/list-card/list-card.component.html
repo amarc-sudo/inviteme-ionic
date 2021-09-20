@@ -1,0 +1,8 @@
+<ion-content
+  [scrollEvents]="true">
+<div class="recap" *ngIf="list$ | async as etudiant">
+  <div *ngFor="let element of etudiant">
+    <app-card-event [event]="element"></app-card-event>
+  </div>
+</div>
+</ion-content>
